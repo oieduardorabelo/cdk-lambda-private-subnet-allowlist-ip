@@ -1,9 +1,9 @@
-# AWS Lambda in Private Subnet restrict outbound connection based on Allow List of IPs
+# AWS Lambda in Private Subnet with restrict outbound connection based on IP Allowlist
 
 CDK example of:
 
 - AWS Lambda running inside a VPC
-- Outbound connection of AWS Lambda based on Allow List of IPs
+- Restrict outbound connection based on IP Allowlist
 - Custom Security Group in AWS Lambda to restrict outbound connection
 - NAT Gateway in Public Subnet to allow Internet connection for AWS Lambda
 

@@ -1,7 +1,7 @@
 import * as cdk from "aws-cdk-lib";
 import { Construct } from "constructs";
 
-let ALLOWLIST_IP = [
+let IP_ALLOWLIST = [
   // Postman Echo API, https://learning.postman.com/docs/developer/echo-api/
   "34.205.194.84/32"
 ]
@@ -31,7 +31,7 @@ export class LambdaPrivateAllowListIp extends cdk.Stack {
       allowAllOutbound: false,
     });
 
-    for (let ip of ALLOWLIST_IP) {
+    for (let ip of IP_ALLOWLIST) {
       sgLambda.addEgressRule(
         cdk.aws_ec2.Peer.ipv4(ip),
         cdk.aws_ec2.Port.allTraffic(),
