@@ -1,9 +1,9 @@
 {
-  "name": "lambda-private-dynamodb",
+  "name": "lambda-private-allowlist-ip.ts",
   "version": "0.1.0",
   "license": "MIT",
   "bin": {
-    "lambda-private-dynamodb": "bin/lambda-private-dynamodb.js"
+    "lambda-private-allowlist-ip.ts": "bin/lambda-private-allowlist-ip.ts.js"
   },
   "scripts": {
     "build": "tsc",
